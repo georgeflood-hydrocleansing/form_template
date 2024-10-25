@@ -195,3 +195,49 @@ $(document).ready(function () {
     }
   }
 });
+
+$(document).ready(function () {
+  gsap.set('.contactForm--headers h2', { opacity: 0 });
+  gsap.set('.contactForm--headers h3', { opacity: 0 });
+
+  const mainTL = gsap.timeline();
+
+  mainTL
+    .to('.contactForm--headers h2', {
+      opacity: 1,
+      duration: 1,
+    })
+    .from('.contactForm--headers h2', {
+      duration: 0.2,
+      text: {
+        value: '',
+        delimiter: '',
+      },
+      ease: 'none',
+    })
+    .to('.contactForm--headers h3', {
+      opacity: 1,
+      duration: 0.3,
+    })
+    .from('.contactForm--headers h3', {
+      duration: 0.3,
+      text: {
+        value: '',
+        delimiter: '',
+      },
+      ease: 'none',
+    })
+    .from('.form-field', {
+      opacity: 0,
+      y: 20,
+      duration: 0.3,
+      stagger: 0.2,
+      ease: 'power2.out',
+    })
+    .from('.button', {
+      opacity: 0,
+      y: 20,
+      duration: 0.3,
+      ease: 'power2.out',
+    });
+});
