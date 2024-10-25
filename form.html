@@ -19,11 +19,11 @@
         <div class="contactForm">
           <div class="contactForm--headers">
             <h2>Contact Us</h2>
-            <h3>Are you interested in working with us?</h3>
+            <h3>Are you interested in working together?</h3>
           </div>
 
           <form
-            id="subscribe_form"
+            id="form"
             class="form"
           >
             <div class="form-field">
@@ -32,6 +32,7 @@
                 name="name"
                 placeholder=" "
                 required
+                class="form-control"
               />
               <label>Name</label>
             </div>
@@ -42,6 +43,7 @@
                 name="email"
                 placeholder=" "
                 required
+                class="form-control"
               />
               <label>Email</label>
             </div>
@@ -52,6 +54,7 @@
                 name="phone"
                 placeholder=" "
                 required
+                class="form-control"
               />
               <label>Phone</label>
             </div>
@@ -60,11 +63,15 @@
               <textarea
                 name="message"
                 placeholder=" "
+                class="form-control"
               ></textarea>
               <label>Message</label>
             </div>
-
-            <button class="button">
+            <button
+              type="submit"
+              id="submitButton"
+              class="button"
+            >
               <span class="default">Send</span>
               <span class="success">Sent!</span>
               <div class="left"></div>
@@ -75,10 +82,12 @@
       </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- Include the necessary libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Your custom JavaScript file -->
     <script src="./form.js"></script>
   </body>
 </html>

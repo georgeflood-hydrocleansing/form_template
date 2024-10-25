@@ -1,35 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 :root {
   --background-img: url(https://via.placeholder.com/1920x1080.png?text=Placeholder+Image);
 }
 
+*,
 *::after,
-*::before,
-* {
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  padding: 2rem;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
   color: #333;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 100%;
   border-radius: 0.5rem;
 }
 
@@ -121,8 +122,10 @@ input:-webkit-autofill:active {
 .form-field textarea:focus + label,
 .form-field input:not(:placeholder-shown) + label,
 .form-field textarea:not(:placeholder-shown) + label {
-  top: -10px;
-  font-size: 14px;
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 1.4rem;
   color: #ff6b3d;
 }
 
@@ -275,4 +278,40 @@ input:-webkit-autofill:active {
       color: var(--success);
     }
   }
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 80%;
+  margin-top: 4px;
+}
+
+.form-control.is-invalid + .invalid-feedback {
+  display: block;
+}
+
+.has-error input,
+.has-error textarea {
+  border-color: #dc3545;
+}
+
+.has-error label {
+  top: 2.6rem;
+  color: #dc3545;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
