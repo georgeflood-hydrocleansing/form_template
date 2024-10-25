@@ -205,10 +205,10 @@ $(document).ready(function () {
   mainTL
     .to('.contactForm--headers h2', {
       opacity: 1,
-      duration: 1,
+      duration: 0.3,
     })
     .from('.contactForm--headers h2', {
-      duration: 0.2,
+      duration: 0.3,
       text: {
         value: '',
         delimiter: '',
