@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-:root {
-  --background-img: url(https://via.placeholder.com/1920x1080.png?text=Placeholder+Image);
-}
 
 *,
 *::after,
@@ -25,6 +22,7 @@ body {
   color: #333;
   height: 100%;
   overflow: hidden;
+  padding: 2rem;
 }
 
 .container {
@@ -43,7 +41,7 @@ body {
 
 .background--container {
   width: 100%;
-  background-image: var(--background-img);
+  border-radius: 0.5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +49,7 @@ body {
 
 @media (max-width: 820px) {
   .background--container {
-    height: 30vh;
+    height: 45vh;
   }
 }
 
@@ -92,11 +90,9 @@ body {
     justify-content: center;
     min-height: 60vh;
   }
-}
 
-@media (max-width: 450px) {
   .contactForm {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -124,7 +120,7 @@ body {
 
 @media (max-width: 450px) {
   .contactForm--headers h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
