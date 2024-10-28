@@ -1,10 +1,30 @@
 {
-  "example.hydro.com": {
+  "emergencyflood.co.uk": {
     "backgroundImage": "url(https://images.unsplash.com/photo-1553211274-94febfa26133?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-    "text": "How can we help you at hydro"
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
   },
-  "another.domain.com": {
-    "backgroundImage": "url(https://example.com/background2.jpg)",
-    "text": "Welcome to another domain"
+  "emergencyflood.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "flood-cleanup-services.co.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "flood-cleanup.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "flood-damage-control.co.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "flood-response.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "flood-response.co.uk": {
+    "backgroundImage": "url(/images/background.jpg)",
+    "text": "Flooded? We're here to help! Message us below and we'll reply ASAP."
   }
 }
