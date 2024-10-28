@@ -1,22 +1,93 @@
 $(document).ready(function () {
-  // Define a custom 'pattern' method for jQuery Validate
+  gsap.set('.contact--container', {
+    opacity: 0,
+    x: '100%',
+  });
+  gsap.set('.contactForm--headers h2', {
+    opacity: 0,
+    y: 20,
+  });
+  gsap.set('.contactForm--headers h3', {
+    opacity: 0,
+    y: 20,
+  });
+  gsap.set('.form-field', {
+    opacity: 0,
+    y: 20,
+  });
+  gsap.set('.button', {
+    opacity: 0,
+    y: 20,
+  });
+
+  // ===== Animation Timeline =====
+  const mainTl = gsap.timeline();
+
+  mainTl
+    .to('.background--container', {
+      duration: 1.2,
+      width: '50%',
+      ease: 'power2.inOut',
+    })
+    .to(
+      '.contact--container',
+      {
+        duration: 1,
+        opacity: 1,
+        x: '0%',
+        ease: 'power2.out',
+      },
+      '-=0.7'
+    )
+    .to('.contactForm--headers h2', {
+      duration: 0.6,
+      opacity: 1,
+      y: 0,
+      ease: 'power3.out',
+    })
+    .to(
+      '.contactForm--headers h3',
+      {
+        duration: 0.6,
+        opacity: 1,
+        y: 0,
+        ease: 'power3.out',
+      },
+      '-=0.4'
+    )
+    .to(
+      '.form-field',
+      {
+        duration: 0.6,
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        ease: 'power3.out',
+      },
+      '-=0.2'
+    )
+    .to(
+      '.button',
+      {
+        duration: 0.6,
+        opacity: 1,
+        y: 0,
+        ease: 'power3.out',
+      },
+      '-=0.2'
+    );
+
+  // ===== Form Validation =====
   $.validator.addMethod(
     'pattern',
     function (value, element, param) {
-      if (this.optional(element)) {
-        return true;
-      }
-      if (typeof param === 'string') {
-        param = new RegExp(param);
-      }
-      return param.test(value);
+      if (this.optional(element)) return true;
+      return new RegExp(param).test(value);
     },
     'Please check your input.'
   );
 
-  // Initialize form validator
-  const validator = $('#form').validate({
-    // Define validation rules
+  $('#form').validate({
     rules: {
       name: {
         required: true,
@@ -32,7 +103,6 @@ $(document).ready(function () {
         pattern: '^(\\+44\\s?7\\d{3}|\\(?07\\d{3}\\)?)\\s?\\d{3}\\s?\\d{3}$',
       },
     },
-    // Define validation error messages
     messages: {
       name: {
         required: 'Please enter your name',
@@ -48,64 +118,38 @@ $(document).ready(function () {
         pattern: 'Please enter a valid UK phone number',
       },
     },
-    // Customize error placement
     errorPlacement: function (error, element) {
       error.addClass('error');
       error.appendTo(element.closest('.form-field'));
     },
-    // Highlight invalid fields
     highlight: function (element) {
       $(element).closest('.form-field').addClass('has-error');
     },
-    // Unhighlight valid fields
     unhighlight: function (element) {
       $(element).closest('.form-field').removeClass('has-error');
     },
   });
 
-  // Handle form submission
-  $('#form').on('submit', function (e) {
-    e.preventDefault();
-
-    // Check if the form is valid
-    if ($(this).valid()) {
-      // If valid, trigger animation then submit
-      animateButton(
-        $('#submitButton'),
-        function () {
-          this.submit();
-        }.bind(this)
-      );
-    }
-    // If invalid, validation errors will be shown automatically
-  });
-
-  /**
-   * Function to handle GSAP animations on the button
-   * @param {jQuery Object} button - The submit button as a jQuery object
-   * @param {Function} callback - A callback function to execute after animation
-   */
+  // ===== Submit Button Animation =====
   function animateButton(button, callback) {
     if (!button.hasClass('active')) {
       button.addClass('active');
 
-      // GSAP Animation sequence
-      gsap
-        .timeline({
-          onComplete: function () {
-            button.removeClass('active');
-            if (typeof callback === 'function') {
-              callback();
-            }
-          },
-        })
+      const planeTl = gsap.timeline({
+        onComplete: function () {
+          button.removeClass('active');
+          if (typeof callback === 'function') callback();
+        },
+      });
+
+      planeTl
         .to(button, {
           duration: 0.2,
           '--left-wing-first-x': 50,
           '--left-wing-first-y': 100,
           '--right-wing-second-x': 50,
           '--right-wing-second-y': 100,
-          onComplete: function () {
+          onComplete: () => {
             gsap.set(button, {
               '--left-wing-first-y': 0,
               '--left-wing-second-x': 40,
@@ -156,7 +200,7 @@ $(document).ready(function () {
           '--plane-x': 45,
           '--plane-y': -180,
           '--plane-opacity': 0,
-          onComplete: function () {
+          onComplete: () => {
             gsap.to(button, {
               duration: 0.3,
               opacity: 1,
@@ -166,7 +210,6 @@ $(document).ready(function () {
           },
         });
 
-      // Animate button style changes
       gsap
         .timeline()
         .to(button, {
@@ -194,50 +237,17 @@ $(document).ready(function () {
         });
     }
   }
-});
 
-$(document).ready(function () {
-  gsap.set('.contactForm--headers h2', { opacity: 0 });
-  gsap.set('.contactForm--headers h3', { opacity: 0 });
-
-  const mainTL = gsap.timeline();
-
-  mainTL
-    .to('.contactForm--headers h2', {
-      opacity: 1,
-      duration: 0.3,
-    })
-    .from('.contactForm--headers h2', {
-      duration: 0.3,
-      text: {
-        value: '',
-        delimiter: '',
-      },
-      ease: 'none',
-    })
-    .to('.contactForm--headers h3', {
-      opacity: 1,
-      duration: 0.3,
-    })
-    .from('.contactForm--headers h3', {
-      duration: 0.3,
-      text: {
-        value: '',
-        delimiter: '',
-      },
-      ease: 'none',
-    })
-    .from('.form-field', {
-      opacity: 0,
-      y: 20,
-      duration: 0.3,
-      stagger: 0.2,
-      ease: 'power2.out',
-    })
-    .from('.button', {
-      opacity: 0,
-      y: 20,
-      duration: 0.3,
-      ease: 'power2.out',
-    });
+  // ===== Form Submit Handler =====
+  $('#form').on('submit', function (e) {
+    e.preventDefault();
+    if ($(this).valid()) {
+      animateButton(
+        $('#submitButton'),
+        function () {
+          this.submit();
+        }.bind(this)
+      );
+    }
+  });
 });
