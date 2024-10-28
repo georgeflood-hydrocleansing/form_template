@@ -356,6 +356,14 @@ input:-webkit-autofill:active {
     width: 65%;
     margin: auto auto;
   }
+
+  .contactForm--headers h2 {
+    font-size: 1.5rem;
+  }
+
+  .contactForm--headers h3 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 450px) {
