@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
           domainConfig.text;
       } else {
         //// DEFAULT BACKGROUND IMAGE AND TEXT
-        container.style.backgroundImage = 'url(/images/roadsweeper.jpg)';
+        container.style.backgroundImage = 'url(/images/drilling.jpg)';
         document.querySelector('.contactForm--headers h3').textContent =
           'Are you interested in working together?';
       }
