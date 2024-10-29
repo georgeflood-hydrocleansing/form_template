@@ -25,7 +25,7 @@ $(document).ready(function () {
 
   mainTl
     .to('.background--container', {
-      duration: 1.2,
+      duration: 0.6,
       width: '50%',
       ease: 'power2.inOut',
     })
@@ -37,10 +37,10 @@ $(document).ready(function () {
         x: '0%',
         ease: 'power2.out',
       },
-      '-=0.7'
+      '-=1'
     )
     .to('.contactForm--headers h2', {
-      duration: 0.6,
+      duration: 0.5,
       opacity: 1,
       y: 0,
       ease: 'power3.out',
@@ -48,7 +48,7 @@ $(document).ready(function () {
     .to(
       '.contactForm--headers h3',
       {
-        duration: 0.6,
+        duration: 0.5,
         opacity: 1,
         y: 0,
         ease: 'power3.out',
@@ -58,7 +58,7 @@ $(document).ready(function () {
     .to(
       '.form-field',
       {
-        duration: 0.6,
+        duration: 0.5,
         opacity: 1,
         y: 0,
         stagger: 0.1,
@@ -69,7 +69,7 @@ $(document).ready(function () {
     .to(
       '.button',
       {
-        duration: 0.6,
+        duration: 0.5,
         opacity: 1,
         y: 0,
         ease: 'power3.out',

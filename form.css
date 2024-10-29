@@ -52,7 +52,6 @@ body {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  margin: 0;
   padding: 0;
 }
 
@@ -78,14 +77,14 @@ body {
 }
 
 .contactForm--headers h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
   opacity: 0;
 }
 
 .contactForm--headers h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--text-dark);
   opacity: 0;
