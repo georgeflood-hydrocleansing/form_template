@@ -333,26 +333,15 @@ select:-webkit-autofill {
   .background--container {
     height: 45vh;
     width: 100% !important;
-    transform: none !important;
   }
 
   .contact--container {
     width: 100%;
     min-height: 55vh;
-    opacity: 1 !important;
-    transform: none !important;
   }
 
   .contactForm {
     width: 80%;
-  }
-
-  .form-field,
-  .button,
-  .contactForm--headers h2,
-  .contactForm--headers h3 {
-    opacity: 1 !important;
-    transform: none !important;
   }
 }
 

@@ -1,83 +1,103 @@
 $(document).ready(function () {
-  gsap.set('.contact--container', {
-    opacity: 0,
-    x: '100%',
-  });
-  gsap.set('.contactForm--headers h2', {
-    opacity: 0,
-    y: 20,
-  });
-  gsap.set('.contactForm--headers h3', {
-    opacity: 0,
-    y: 20,
-  });
-  gsap.set('.form-field', {
-    opacity: 0,
-    y: 20,
-  });
-  gsap.set('.button', {
-    opacity: 0,
-    y: 20,
-  });
+  const isMobile = window.innerWidth <= 820;
 
-  // ===== Animation Timeline =====
+  if (!isMobile) {
+    gsap.set('.contact--container', {
+      opacity: 0,
+      x: '100%',
+    });
+  }
+
+  gsap.set(
+    [
+      '.contactForm--headers h2',
+      '.contactForm--headers h3',
+      '.form-field',
+      '.button',
+    ],
+    {
+      opacity: 0,
+      y: isMobile ? 0 : 20,
+    }
+  );
+
+  // Create the animation timeline
   const mainTl = gsap.timeline();
 
-  mainTl
-    .to('.background--container', {
-      duration: 0.6,
-      width: '50%',
-      ease: 'power2.inOut',
-    })
-    .to(
-      '.contact--container',
-      {
-        duration: 1,
+  if (!isMobile) {
+    // Desktop animation
+    mainTl
+      .to('.background--container', {
+        duration: 0.6,
+        width: '50%',
+        ease: 'power2.inOut',
+      })
+      .to(
+        '.contact--container',
+        {
+          duration: 1,
+          opacity: 1,
+          x: '0%',
+          ease: 'power2.out',
+        },
+        '-=1'
+      )
+      .to('.contactForm--headers h2', {
+        duration: 0.5,
         opacity: 1,
-        x: '0%',
+        y: 0,
+        ease: 'power3.out',
+      })
+      .to(
+        '.contactForm--headers h3',
+        {
+          duration: 0.5,
+          opacity: 1,
+          y: 0,
+          ease: 'power3.out',
+        },
+        '-=0.4'
+      )
+      .to(
+        '.form-field',
+        {
+          duration: 0.5,
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          ease: 'power3.out',
+        },
+        '-=0.2'
+      )
+      .to(
+        '.button',
+        {
+          duration: 0.5,
+          opacity: 1,
+          y: 0,
+          ease: 'power3.out',
+        },
+        '-=0.2'
+      );
+  } else {
+    mainTl.to(
+      [
+        '.contact--container',
+        '.contactForm--headers h2',
+        '.contactForm--headers h3',
+        '.form-field',
+        '.button',
+      ],
+      {
+        duration: 0.5,
+        opacity: 1,
+        stagger: 0.15,
         ease: 'power2.out',
-      },
-      '-=1'
-    )
-    .to('.contactForm--headers h2', {
-      duration: 0.5,
-      opacity: 1,
-      y: 0,
-      ease: 'power3.out',
-    })
-    .to(
-      '.contactForm--headers h3',
-      {
-        duration: 0.5,
-        opacity: 1,
-        y: 0,
-        ease: 'power3.out',
-      },
-      '-=0.4'
-    )
-    .to(
-      '.form-field',
-      {
-        duration: 0.5,
-        opacity: 1,
-        y: 0,
-        stagger: 0.1,
-        ease: 'power3.out',
-      },
-      '-=0.2'
-    )
-    .to(
-      '.button',
-      {
-        duration: 0.5,
-        opacity: 1,
-        y: 0,
-        ease: 'power3.out',
-      },
-      '-=0.2'
+      }
     );
+  }
 
-  // ===== Form Validation =====
+  // Form Validation
   $.validator.addMethod(
     'pattern',
     function (value, element, param) {
@@ -130,7 +150,7 @@ $(document).ready(function () {
     },
   });
 
-  // ===== Submit Button Animation =====
+  // Submit Button Animation
   function animateButton(button, callback) {
     if (!button.hasClass('active')) {
       button.addClass('active');
@@ -238,7 +258,7 @@ $(document).ready(function () {
     }
   }
 
-  // ===== Form Submit Handler =====
+  // Form Submit Handler
   $('#form').on('submit', function (e) {
     e.preventDefault();
     if ($(this).valid()) {

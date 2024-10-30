@@ -27,6 +27,18 @@
     "backgroundImage": "url(/images/FloodResponse.jpg)",
     "text": "Flood emergency? We're your rapid response team! Contact us now and we'll be there in no time!"
   },
+  "emergancyliquidstorage.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
+  },
+  "emergency-bulk-storage.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
+  },
+  "emergency-liquid-storage.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
+  },
   "hazardouswasteliquiddisposal.co.uk": {
     "backgroundImage": "url(/images/liquidwaste.jpg)",
     "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
@@ -36,6 +48,10 @@
     "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
   },
   "liquid-waste.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
+  },
+  "liquid-waste.uk": {
     "backgroundImage": "url(/images/liquidwaste.jpg)",
     "text": "Got liquid waste issues? We're the experts you need! Message us now, and we'll respond promptly!"
   },
@@ -83,6 +99,10 @@
     "backgroundImage": "url(/images/liquidwaste.jpg)",
     "text": "Tideway waste removal needed? We're at your service! Message us, and we'll get back to you promptly!"
   },
+  "waste-logistics.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need waste logistics solutions? We're here to help! Contact us, and we'll respond promptly!"
+  },
   "london-pump-services.co.uk": {
     "backgroundImage": "url(/images/pumpservices.jpg)",
     "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
@@ -99,9 +119,125 @@
     "backgroundImage": "url(/images/pumpservices.jpg)",
     "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
   },
+  "london-pumps.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
+  },
+  "london-pumps.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
+  },
+  "londonpumpandplantsales.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
+  },
+  "londonpumpandplantsales.com": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
+  },
+  "londonpumpsservices.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Looking for top-notch pump services in London? We've got you covered! Drop us a line, and we'll respond right away!"
+  },
+  "pumpstationcleaning.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Need pump station cleaning? We're the experts! Contact us now, and we'll respond promptly!"
+  },
+  "pumpstationcleaning.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Need pump station cleaning? We're the experts! Contact us now, and we'll respond promptly!"
+  },
+  "pumpstationservices.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Need pump station services? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewagetreatmentpump.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Need sewage treatment pump services? We're the specialists! Contact us now, and we'll respond quickly!"
+  },
   "hclwaste.com": {
     "backgroundImage": "url(/images/hclwaste.jpg)",
     "text": "Seeking effective waste management solutions? We're the team for you! Contact us, and we'll reply swiftly!"
+  },
+  "hcl-commercial-bodywork.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need commercial bodywork solutions? We're here to help! Contact us, and we'll reply promptly!"
+  },
+  "hcl-commercial-bodywork.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need commercial bodywork solutions? We're here to help! Contact us, and we'll reply promptly!"
+  },
+  "hcl-commercial-bodywork.ltd": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need commercial bodywork solutions? We're here to help! Contact us, and we'll reply promptly!"
+  },
+  "hcl-commercial-bodywork.services": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need commercial bodywork solutions? We're here to help! Contact us, and we'll reply promptly!"
+  },
+  "hcl-haulage.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Looking for reliable haulage services? We've got you covered! Message us, and we'll respond quickly!"
+  },
+  "hcl-haulage.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Looking for reliable haulage services? We've got you covered! Message us, and we'll respond quickly!"
+  },
+  "hcl-logistics.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need logistics solutions? We're your trusted partner! Contact us, and we'll reply promptly!"
+  },
+  "hcl-logistics.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need logistics solutions? We're your trusted partner! Contact us, and we'll reply promptly!"
+  },
+  "hcl-recruitment.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Looking for industry professionals? We can help! Get in touch, and we'll respond swiftly!"
+  },
+  "hcl-recruitment.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Looking for industry professionals? We can help! Get in touch, and we'll respond swiftly!"
+  },
+  "hclfleet.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need fleet services? We're here to assist! Message us, and we'll reply ASAP!"
+  },
+  "hclfleet.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need fleet services? We're here to assist! Message us, and we'll reply ASAP!"
+  },
+  "hclfleet.services": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need fleet services? We're here to assist! Message us, and we'll reply ASAP!"
+  },
+  "hclfleetservices.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need fleet services? We're here to assist! Message us, and we'll reply ASAP!"
+  },
+  "hclfleetservices.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need fleet services? We're here to assist! Message us, and we'll reply ASAP!"
+  },
+  "hcllogistics.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need logistics solutions? We're your trusted partner! Contact us, and we'll reply promptly!"
+  },
+  "hcllogistics.com": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need logistics solutions? We're your trusted partner! Contact us, and we'll reply promptly!"
+  },
+  "hclsweepers.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need HCL Sweeper services? We've got you covered! Message us below, and we'll reply ASAP!"
+  },
+  "hcltransport.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need transport solutions? We're here to help! Contact us, and we'll respond quickly!"
+  },
+  "hcltransportation.co.uk": {
+    "backgroundImage": "url(/images/hclwaste.jpg)",
+    "text": "Need transport solutions? We're here to help! Contact us, and we'll respond quickly!"
   },
   "septicwaste.co.uk": {
     "backgroundImage": "url(/images/septicwaste.jpg)",
@@ -114,6 +250,58 @@
   "sewage-waste.uk": {
     "backgroundImage": "url(/images/sewagewaste.jpg)",
     "text": "Sewage problems? We're here to fix them! Message us, and we'll reply ASAP!"
+  },
+  "sewagedigester.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Sewage digester issues? We're the experts! Contact us now, and we'll reply ASAP!"
+  },
+  "sewagedisposal.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need sewage disposal services? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewagemaintenance.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Sewage maintenance needed? We've got you covered! Contact us now, and we'll reply ASAP!"
+  },
+  "sewageservice.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need sewage services? We're here to help! Get in touch, and we'll respond promptly!"
+  },
+  "sewagetanker.com": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need sewage tanker services? We're the specialists! Contact us, and we'll reply ASAP!"
+  },
+  "sewagetankers.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need sewage tanker services? We're the specialists! Contact us, and we'll reply ASAP!"
+  },
+  "sewerage-waste.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Sewerage waste issues? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewerage-waste.com": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Sewerage waste issues? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewercleansing.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need sewer cleaning services? We're the experts! Contact us now, and we'll reply ASAP!"
+  },
+  "sewerdigester.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Sewer digester problems? We've got the solution! Message us, and we'll reply ASAP!"
+  },
+  "sewerdrains.co.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Issues with sewer drains? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewerdrains.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Issues with sewer drains? We're here to help! Message us, and we'll reply ASAP!"
+  },
+  "sewerjetting.co.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need sewer jetting services? We're the specialists! Contact us, and we'll reply promptly!"
   },
   "cctvsurvey.uk": {
     "backgroundImage": "url(/images/CCTV.jpg)",
@@ -139,6 +327,10 @@
     "backgroundImage": "url(/images/CCTV.jpg)",
     "text": "Need precise WinCan CCTV surveys? We're the specialists! Contact us, and we'll reply swiftly!"
   },
+  "draineyehire.com": {
+    "backgroundImage": "url(/images/CCTV.jpg)",
+    "text": "Need drain inspection equipment? We've got you covered! Contact us, and we'll reply promptly!"
+  },
   "mega-cam.co": {
     "backgroundImage": "url(/images/CCTV.jpg)",
     "text": "Searching for Mega Cam expertise? Look no further! Message us, and we'll get back to you promptly!"
@@ -162,6 +354,42 @@
   "mega-cctv.co.uk": {
     "backgroundImage": "url(/images/CCTV.jpg)",
     "text": "In need of Mega CCTV solutions? We've got you covered! Reach out, and we'll respond ASAP!"
+  },
+  "mega-float.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need floating waste solutions? We're here to help! Contact us, and we'll respond quickly!"
+  },
+  "mega-float.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need floating waste solutions? We're here to help! Contact us, and we'll respond quickly!"
+  },
+  "megafloat.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need floating waste solutions? We're here to help! Contact us, and we'll respond quickly!"
+  },
+  "mega-heat.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need heated waste solutions? We're the experts! Message us, and we'll reply promptly!"
+  },
+  "mega-heat.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need heated waste solutions? We're the experts! Message us, and we'll reply promptly!"
+  },
+  "mega-reel.co.uk": {
+    "backgroundImage": "url(/images/CCTV.jpg)",
+    "text": "Need CCTV reel solutions? We've got you covered! Contact us, and we'll respond ASAP!"
+  },
+  "mega-reel.com": {
+    "backgroundImage": "url(/images/CCTV.jpg)",
+    "text": "Need CCTV reel solutions? We've got you covered! Contact us, and we'll respond ASAP!"
+  },
+  "mega-reel.uk": {
+    "backgroundImage": "url(/images/CCTV.jpg)",
+    "text": "Need CCTV reel solutions? We've got you covered! Contact us, and we'll respond ASAP!"
+  },
+  "megareel.co.uk": {
+    "backgroundImage": "url(/images/CCTV.jpg)",
+    "text": "Need CCTV reel solutions? We've got you covered! Contact us, and we'll respond ASAP!"
   },
   "os19x-os21x.co.uk": {
     "backgroundImage": "url(/images/CCTV.jpg)",
@@ -265,7 +493,31 @@
   },
   "construction-sweepers.co.uk": {
     "backgroundImage": "url(/images/roadsweeper.jpg)",
-    "text": "Need road sweeping services? We're your local experts! Send us a message, and we'll respond promptly!"
+    "text": "Need construction site sweeping? We're your specialists! Contact us, and we'll respond promptly!"
+  },
+  "clean-my-carpark.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need car park cleaning services? We're here to help! Message us, and we'll respond promptly!"
+  },
+  "combination-unit.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need combination unit services? We've got you covered! Contact us, and we'll respond quickly!"
+  },
+  "combinationunit.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need combination unit services? We've got you covered! Contact us, and we'll respond quickly!"
+  },
+  "combinationunit.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need combination unit services? We've got you covered! Contact us, and we'll respond quickly!"
+  },
+  "combinationunittanker.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need combination unit tanker services? We're the experts! Message us, and we'll reply ASAP!"
+  },
+  "supercombinationunit.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need advanced combination unit services? We're here to help! Contact us now!"
   },
   "major-event-cleanup.co.uk": {
     "backgroundImage": "url(/images/festival.jpg)",
@@ -287,136 +539,396 @@
     "backgroundImage": "url(/images/festival.jpg)",
     "text": "Big event coming up? Let us handle the cleanup! Message us, and we'll respond swiftly!"
   },
-  "hclsweepers.co.uk": {
-    "backgroundImage": "url(/images/roadsweeper.jpg)",
-    "text": "Need HCL Sweeper services? We've got you covered! Message us below, and we'll reply ASAP!"
+  "construction-cleaning.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need construction site cleaning? We're the specialists! Contact us for prompt service!"
   },
-  "abc-drainage.com": {
+  "construction-liquid.org": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Construction liquid waste issues? We've got solutions! Message us for quick response!"
+  },
+  "construction-services.co": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need construction services? We're here to help! Contact us for professional assistance!"
+  },
+  "confinedspacework.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need confined space expertise? We're the specialists! Contact us for safe solutions!"
+  },
+  "confinedspacework.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need confined space expertise? We're the specialists! Contact us for safe solutions!"
+  },
+  "contract-lifting-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need contract lifting services? We're here to help! Contact us for professional assistance!"
+  },
+  "cross-rail.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need rail infrastructure services? We're the experts! Contact us for prompt assistance!"
+  },
+  "cross-rail.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need rail infrastructure services? We're the experts! Contact us for prompt assistance!"
+  },
+  "crossrail-cleaning.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Crossrail cleaning services? We're the specialists! Message us for quick response!"
+  },
+  "crossrail-servicing.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Crossrail servicing? We're here to help! Contact us for professional support!"
+  },
+  "crossrail-servicing.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Crossrail servicing? We're here to help! Contact us for professional support!"
+  },
+  "crossrail-waste.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Crossrail waste management? We're the experts! Message us for prompt service!"
+  },
+  "crossrail-waste.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Crossrail waste management? We're the experts! Message us for prompt service!"
+  },
+  "bulk-tanker.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need bulk tanker services? We've got you covered! Contact us for quick response!"
+  },
+  "bulktanker.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need bulk tanker services? We've got you covered! Contact us for quick response!"
+  },
+  "tanker-hire.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Looking for tanker hire? We're here to help! Message us for immediate assistance!"
+  },
+  "tanker-waste.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tanker waste services? We're the experts! Contact us for professional support!"
+  },
+  "super-sucker-tanker.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need powerful waste removal? Our super suckers are ready! Contact us now!"
+  },
+  "jetvactanker.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need jet vac tanker services? We're here to help! Message us for quick response!"
+  },
+  "jetvactanker.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need jet vac tanker services? We're here to help! Message us for quick response!"
+  },
+  "jetting-drains.co.uk": {
     "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Blocked drains causing trouble? We'll clear them fast! Contact us now, and we'll reply ASAP!"
+    "text": "Need drain jetting services? We're the experts! Contact us for immediate assistance!"
   },
-  "abc-drainage.uk": {
+  "jetting-drians.co.uk": {
     "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Blocked drains causing trouble? We'll clear them fast! Contact us now, and we'll reply ASAP!"
+    "text": "Need drain jetting services? We're the experts! Contact us for immediate assistance!"
   },
-  "abcdrainage.uk": {
+  "jettingvans.co.uk": {
     "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Blocked drains causing trouble? We'll clear them fast! Contact us now, and we'll reply ASAP!"
+    "text": "Need jetting van services? We've got you covered! Message us for quick response!"
   },
-  "blockeddrains-london.com": {
+  "jettingvans.com": {
     "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Blocked drains causing trouble? We'll clear them fast! Contact us now, and we'll reply ASAP!"
+    "text": "Need jetting van services? We've got you covered! Message us for quick response!"
   },
-  "cdrain.co.uk": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Need drain services? We're here to help! Message us below, and we'll reply promptly!"
+  "hrdro-cleansing.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Hydro Cleansing Services? We're here to help! Message us below and we'll reply ASAP."
   },
-  "cdrain.com": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Need drain services? We're here to help! Message us below, and we'll reply promptly!"
+  "hydro-cleansing.co": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Hydro Cleansing Services? We're here to help! Message us below and we'll reply ASAP."
   },
-  "croydon-drain-services.co.uk": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Need drain services? We're here to help! Message us below, and we'll reply promptly!"
+  "hydro-cleansing.london": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Hydro Cleansing in London? We're here to help! Message us below and we'll reply ASAP."
   },
-  "drainlining.co": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Need drain lining services? We've got you covered! Contact us, and we'll respond quickly!"
+  "hydro-cloud.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Cloud-Based Waste Management? We're here to help! Message us below and we'll reply ASAP."
   },
-  "drainpumps.co.uk": {
-    "backgroundImage": "url(/images/pumpservices.jpg)",
-    "text": "Need drain pumps? We're here to assist! Message us, and we'll reply ASAP!"
+  "hydrocleansing.co": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Hydro Cleansing Services? We're here to help! Message us below and we'll reply ASAP."
   },
-  "sewerdrains.co.uk": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Issues with sewer drains? We're here to help! Message us, and we'll reply ASAP!"
+  "hydrocleansing.net": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Hydro Cleansing Services? We're here to help! Message us below and we'll reply ASAP."
   },
-  "sewerdrains.uk": {
-    "backgroundImage": "url(/images/blockeddrains.jpg)",
-    "text": "Issues with sewer drains? We're here to help! Message us, and we'll reply ASAP!"
+  "hydrosoftweb.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Waste Management Software? We're here to help! Message us below and we'll reply ASAP."
   },
-  "bentonite-slurry.co.uk": {
-    "backgroundImage": "url(/images/bentonite.jpg)",
-    "text": "Need bentonite slurry solutions? We're the experts! Get in touch, and we'll respond promptly!"
-  },
-  "bentonite-slurry.uk": {
-    "backgroundImage": "url(/images/bentonite.jpg)",
-    "text": "Need bentonite slurry solutions? We're the experts! Get in touch, and we'll respond promptly!"
-  },
-  "bentoniteremoval.co.uk": {
-    "backgroundImage": "url(/images/bentonite.jpg)",
-    "text": "Need bentonite slurry solutions? We're the experts! Get in touch, and we'll respond promptly!"
-  },
-  "bentoniteremoval.uk": {
-    "backgroundImage": "url(/images/bentonite.jpg)",
-    "text": "Need bentonite slurry solutions? We're the experts! Get in touch, and we'll respond promptly!"
-  },
-  "drilling-slurry.co.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "drilling-slurry.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "drillingmud.co.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "drillingmud.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "drillingslurry.co.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "drillingslurry.uk": {
-    "backgroundImage": "url(/images/drilling.jpg)",
-    "text": "Need drilling slurry or mud services? We've got you covered! Message us, and we'll reply swiftly!"
-  },
-  "frackingwatertanks.co.uk": {
-    "backgroundImage": "url(/images/fractanks.jpg)",
-    "text": "Looking for fracking water tanks? We're your trusted source! Contact us now, and we'll respond promptly!"
-  },
-  "fracktankuk.co.uk": {
-    "backgroundImage": "url(/images/fractanks.jpg)",
-    "text": "Looking for fracking water tanks? We're your trusted source! Contact us now, and we'll respond promptly!"
-  },
-  "fractankuk.co.uk": {
-    "backgroundImage": "url(/images/fractanks.jpg)",
-    "text": "Looking for fracking water tanks? We're your trusted source! Contact us now, and we'll respond promptly!"
-  },
-  "fuel-interceptors.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
-  },
-  "fuelinterceptors.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
-  },
-  "diesel-interceptors.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
-  },
-  "oil-interceptor.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
-  },
-  "petrol-interceptor.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
+  "hydrosoftweb.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Waste Management Software? We're here to help! Message us below and we'll reply ASAP."
   },
   "interceptorcleaning.co.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Interceptor Cleaning? We're here to help! Message us below and we'll reply ASAP."
   },
   "interceptorcleaning.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Interceptor Cleaning? We're here to help! Message us below and we'll reply ASAP."
   },
   "interceptorwaste.uk": {
-    "backgroundImage": "url(/images/interceptor.jpg)",
-    "text": "Need interceptor services? We handle fuel, oil, and more! Get in touch, and we'll reply right away!"
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Interceptor Waste Services? We're here to help! Message us below and we'll reply ASAP."
+  },
+  "cleansafe-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need professional cleaning services? We ensure safety first! Contact us for prompt assistance!"
+  },
+  "cleansafe-services.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need professional cleaning services? We ensure safety first! Contact us for prompt assistance!"
+  },
+  "commercialbodywork.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need commercial vehicle solutions? We're the experts! Contact us for professional service!"
+  },
+  "croydon-waste-recycling.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need waste recycling in Croydon? We're your local experts! Contact us for efficient service!"
+  },
+  "croydon-waste-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need waste services in Croydon? We're your local specialists! Message us for quick response!"
+  },
+  "cyclist-london.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Looking for cyclist-friendly services in London? We prioritize safety! Contact us today!"
+  },
+  "cyclist-london.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Looking for cyclist-friendly services in London? We prioritize safety! Contact us today!"
+  },
+  "digestercleaning.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need digester cleaning services? We're the specialists! Contact us for professional solutions!"
+  },
+  "disinfecting.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need disinfection services? We ensure thorough cleaning! Message us for immediate response!"
+  },
+  "fatberg-fighters.co.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Fatberg problems? We're the fighters you need! Contact us for expert removal!"
+  },
+  "fatberg-fighters.com": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Fatberg problems? We're the fighters you need! Contact us for expert removal!"
+  },
+  "fatbergremoval.blog": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Learn about fatberg removal! Expert advice and services available!"
+  },
+  "fatbergremoval.com": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need fatberg removal? We're the experts! Contact us for professional service!"
+  },
+  "fatbergremoval.london": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "London fatberg issues? We're your local experts! Contact us for quick removal!"
+  },
+  "fatbergremoval.net": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need fatberg removal? We're the experts! Contact us for professional service!"
+  },
+  "fatbergremoval.org.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need fatberg removal? We're the experts! Contact us for professional service!"
+  },
+  "fatbergremoval.uk": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need fatberg removal? We're the experts! Contact us for professional service!"
+  },
+  "fatbergremoval.website": {
+    "backgroundImage": "url(/images/blockeddrains.jpg)",
+    "text": "Need fatberg removal? We're the experts! Contact us for professional service!"
+  },
+  "foggingservice.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need fogging services? We provide complete coverage! Contact us for quick response!"
+  },
+  "forecourt-cleansing.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need forecourt cleaning? We're your specialists! Message us for professional service!"
+  },
+  "forecourtcleansing.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need forecourt cleaning? We're your specialists! Message us for professional service!"
+  },
+  "ground-water.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Ground water issues? We're here to help! Contact us for expert solutions!"
+  },
+  "ground-water.org.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Ground water issues? We're here to help! Contact us for expert solutions!"
+  },
+  "gully-cleaning.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need gully cleaning services? We're the experts! Contact us for professional cleaning!"
+  },
+  "gully-cleaning.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need gully cleaning services? We're the experts! Contact us for professional cleaning!"
+  },
+  "gullygulper.co.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need powerful gully cleaning? Our gulpers are ready! Contact us for quick service!"
+  },
+  "gullygulper.uk": {
+    "backgroundImage": "url(/images/roadsweeper.jpg)",
+    "text": "Need powerful gully cleaning? Our gulpers are ready! Contact us for quick service!"
+  },
+  "london-cleaning-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need cleaning services in London? We're your local experts! Contact us for professional service!"
+  },
+  "london-food-waste.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Food waste disposal in London? We're the specialists! Contact us for proper handling!"
+  },
+  "london-industrial-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need industrial services in London? We've got you covered! Contact us for expert solutions!"
+  },
+  "london-industrial-services.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need industrial services in London? We've got you covered! Contact us for expert solutions!"
+  },
+  "london-tunnels.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel services in London? We're the specialists! Contact us for professional support!"
+  },
+  "london-tunnels.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel services in London? We're the specialists! Contact us for professional support!"
+  },
+  "londonemissionzone.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need emission zone compliant services? We're fully certified! Contact us today!"
+  },
+  "manholeemptying.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need manhole emptying services? We're here to help! Contact us for quick response!"
+  },
+  "manholeemptying.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need manhole emptying services? We're here to help! Contact us for quick response!"
+  },
+  "marine-waste-management.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need marine waste solutions? We're the experts! Contact us for professional service!"
+  },
+  "mobile-incinerator-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need mobile incineration? We come to you! Contact us for safe waste disposal!"
+  },
+  "mobileheatedtank.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need mobile heated tank solutions? We've got you covered! Contact us today!"
+  },
+  "mobilewaterstorage.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need mobile water storage? We provide flexible solutions! Contact us now!"
+  },
+  "portable-liquid-storage-tanks.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need portable liquid storage? We have the perfect tanks! Contact us today!"
+  },
+  "portable-storage-tanks.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need portable storage solutions? We've got the tanks you need! Contact us now!"
+  },
+  "recycle-waste.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need waste recycling services? We're eco-friendly experts! Contact us today!"
+  },
+  "sanitizing.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need sanitizing services? We ensure thorough cleaning! Contact us for professional service!"
+  },
+  "spill-graud.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need spill protection? We've got you covered! Contact us for professional solutions!"
+  },
+  "spill-guard.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need spill protection? We've got you covered! Contact us for professional solutions!"
+  },
+  "subway-cleaning.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need subway cleaning services? We're the specialists! Contact us for professional service!"
+  },
+  "super-sewer-london.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need super sewer services in London? We're the experts! Contact us today!"
+  },
+  "supersewerlondon.co.uk": {
+    "backgroundImage": "url(/images/sewagewaste.jpg)",
+    "text": "Need super sewer services in London? We're the experts! Contact us today!"
+  },
+  "temporarysitepumps.co.uk": {
+    "backgroundImage": "url(/images/pumpservices.jpg)",
+    "text": "Need temporary site pumps? We've got you covered! Contact us for quick setup!"
+  },
+  "thames-water-services.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need Thames water services? We're your local experts! Contact us for professional help!"
+  },
+  "tunnel-cleaning.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel cleaning services? We're the specialists! Contact us for professional cleaning!"
+  },
+  "tunnelcleaning.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel cleaning services? We're the specialists! Contact us for professional cleaning!"
+  },
+  "tunnelcleaning.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel cleaning services? We're the specialists! Contact us for professional cleaning!"
+  },
+  "tunnelwaste.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel waste management? We've got the expertise! Contact us for professional service!"
+  },
+  "tunnelwaste.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need tunnel waste management? We've got the expertise! Contact us for professional service!"
+  },
+  "uhpwj.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need ultra-high pressure water jetting? We're the experts! Contact us now!"
+  },
+  "uhpwj.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need ultra-high pressure water jetting? We're the experts! Contact us now!"
+  },
+  "ultrahighpressurewaterjetting.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need ultra-high pressure water jetting? We're the experts! Contact us now!"
+  },
+  "ultrahighpressurewaterjetting.com": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need ultra-high pressure water jetting? We're the experts! Contact us now!"
+  },
+  "uvline.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need UV lining solutions? We've got the technology! Contact us for expert service!"
+  },
+  "uvlinging.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need UV lining solutions? We've got the technology! Contact us for expert service!"
+  },
+  "wastetankers.co.uk": {
+    "backgroundImage": "url(/images/liquidwaste.jpg)",
+    "text": "Need waste tanker services? We've got the fleet! Contact us for professional support!"
   }
 }

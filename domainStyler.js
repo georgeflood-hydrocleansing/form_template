@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const hostName = window.location.hostname;
       const container = document.querySelector('.background--container');
 
+      console.log('Url count:', Object.keys(data).length);
+
       if (data[hostName]) {
         const domainConfig = data[hostName];
 
