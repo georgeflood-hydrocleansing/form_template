@@ -178,7 +178,6 @@ body {
   --plane-y: 0;
   --plane-opacity: 1;
   --left-wing-background: var(--primary);
-  --left-wing-first-x: 0;
   --left-wing-first-y: 0;
   --left-wing-second-x: 50;
   --left-wing-second-y: 0;
