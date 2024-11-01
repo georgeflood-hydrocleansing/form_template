@@ -356,7 +356,7 @@ select:-webkit-autofill {
   gap: 10px;
   width: 100%;
   padding: 15px 20px;
-  background-color: #e55f36;
+  background-color: var(--primary);
   color: white;
   text-decoration: none;
   border-radius: 4px;
