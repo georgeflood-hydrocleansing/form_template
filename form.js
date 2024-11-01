@@ -398,7 +398,7 @@ $(document).ready(function () {
 
       Swal.fire({
         title: 'Thank you!',
-        html: `If you need us urgently please call us on <br><b><a href='tel:02086893339' style='color: #e55f36; text-decoration: none; font-size: 20px'>0208 689 3339</a></b>`,
+        html: `If you need us urgently please call us on <br><b><a href='tel:08007408888' style='color: #e55f36; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
         icon: 'success',
       });
 
@@ -411,7 +411,7 @@ $(document).ready(function () {
       Swal.fire({
         icon: 'error',
         title: 'Something went wrong!',
-        html: `Try again or contact us directly on <br><b><a href='tel:02086893339' style='color: #e55f36; text-decoration: none; font-size: 20px'>0208 689 3339</a></b>`,
+        html: `Try again or contact us directly on <br><b><a href='tel:08007408888' style='color: #e55f36; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
       });
     }
   };
