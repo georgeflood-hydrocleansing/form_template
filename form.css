@@ -106,7 +106,7 @@ body {
   width: 100%;
   padding: 12px;
   border: 2px solid var(--border-gray);
-  border-radius: 4px;
+  border-radius: var(--input-radius);
   font-size: 16px;
   outline: none;
   transition: all 0.2s ease;
@@ -163,7 +163,14 @@ body {
 .has-error label {
   color: var(--error);
   font-size: 1.2rem;
-  top: 35px;
+  top: 40px;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
 }
 
 .button {
@@ -172,7 +179,7 @@ body {
   --success: #2b3044;
   --success-scale: 0.2;
   --success-opacity: 0;
-  --border-radius: 7;
+  --border-radius: 2;
   --overflow: hidden;
   --rotate: 0;
   --plane-x: 0;
@@ -330,6 +337,7 @@ select:-webkit-autofill {
   position: relative;
   text-align: center;
   width: 100%;
+  margin: 0.5rem 0;
 }
 
 .separator::before,
@@ -355,14 +363,14 @@ select:-webkit-autofill {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%;
   padding: 15px 20px;
   background-color: var(--primary);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: var(--input-radius);
   font-weight: 500;
   transition: all 0.3s ease;
+  min-width: 200px;
 }
 
 .phone-icon {
