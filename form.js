@@ -168,34 +168,8 @@ $(document).ready(function () {
   // ===============================
   // Interactive Animations
   // ===============================
+
   const setupInteractions = () => {
-    // Optimized CTA Button Hover
-    gsap.utils.toArray('.cta-button').forEach((button) => {
-      const hoverTl = gsap.timeline({ paused: true });
-
-      hoverTl
-        .to(button, {
-          duration: 0.2,
-          scale: 1.03,
-          backgroundColor: config.colors.hover,
-          boxShadow: '0 4px 15px rgba(229, 95, 54, 0.3)',
-          ease: config.ease.smooth,
-        })
-        .to(
-          button.querySelector('.fa-phone'),
-          {
-            duration: 0.2,
-            rotate: 15,
-            scale: 1.2,
-            ease: config.ease.smooth,
-          },
-          0
-        );
-
-      button.addEventListener('mouseenter', () => hoverTl.play());
-      button.addEventListener('mouseleave', () => hoverTl.reverse());
-    });
-
     // Form Field Focus
     $('.form-field input, .form-field textarea').each(function () {
       const field = $(this);
