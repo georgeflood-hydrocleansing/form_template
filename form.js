@@ -65,8 +65,9 @@ $(document).ready(function () {
         x: '100%',
       });
 
+      // Set the background off-screen to the left
       gsap.set(elements.background, {
-        width: '0%',
+        x: '-100%',
       });
     }
   };
@@ -87,7 +88,7 @@ $(document).ready(function () {
         elements.background,
         {
           duration: config.timing.background,
-          width: '50%',
+          x: '0%',
           ease: config.ease.background,
         },
         'start'
@@ -414,5 +415,6 @@ $(document).ready(function () {
     });
   };
 
-  init();
+  // Wait for the 'backgroundImageLoaded' event before initializing
+  $(document).on('backgroundImageLoaded', init);
 });
