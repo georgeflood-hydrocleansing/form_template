@@ -2,176 +2,181 @@ $(document).ready(function () {
   // ===============================
   // Configuration
   // ===============================
-  const isMobile = window.innerWidth <= 820;
   const config = {
+    breakpoints: {
+      mobile: 820,
+    },
     timing: {
-      base: 0.3,
+      container: 0.5,
+      background: 0.6,
+      content: 0.3,
       stagger: 0.08,
-      background: 0.5,
     },
     ease: {
-      smooth: 'power2.out',
+      container: 'power1.inOut',
+      background: 'power2.inOut',
+      content: 'power2.out',
       bounce: 'back.out(1.7)',
-      snappy: 'power3.out',
     },
     colors: {
       primary: '#e55f36',
       hover: '#cc532f',
     },
+    api: {
+      endpoint: 'https://hydro-cleansing.com/api/capture-leads',
+    },
+  };
+
+  const isMobile = window.innerWidth <= config.breakpoints.mobile;
+
+  // ===============================
+  // DOM Elements
+  // ===============================
+  const elements = {
+    form: $('#form'),
+    submitButton: $('#submitButton'),
+    container: $('.contact--container'),
+    background: $('.background--container'),
+    formFields: $('.form-field input, .form-field textarea'),
+    contentElements: [
+      '.contactForm--headers h2',
+      '.contactForm--headers h3',
+      '.form-field',
+      '.button',
+      '.separator',
+      '.cta-button',
+    ],
   };
 
   // ===============================
-  // Initial States
+  // Animation Setup
   // ===============================
   const setupInitialStates = () => {
+    // Reset all animations
+    gsap.set(elements.contentElements, {
+      opacity: 0,
+      y: 20,
+      scale: 0.9,
+    });
+
     if (!isMobile) {
-      gsap.set('.contact--container', {
+      gsap.set(elements.container, {
         opacity: 0,
         x: '100%',
       });
-    }
 
-    // Sequential elements start position
-    gsap.set(
-      [
-        '.contactForm--headers h2',
-        '.contactForm--headers h3',
-        '.form-field',
-        '.button',
-        '.separator',
-        '.cta-button',
-      ],
-      {
-        opacity: 0,
-        y: 20,
-        scale: 0.9,
-      }
-    );
+      gsap.set(elements.background, {
+        width: '0%',
+      });
+    }
   };
 
-  // ===============================
-  // Main Animation Timeline
-  // ===============================
-  const createAnimationTimeline = () => {
+  const createMainAnimation = () => {
     const tl = gsap.timeline();
 
-    if (!isMobile) {
-      // Desktop sequence
-      tl.to('.background--container', {
-        duration: config.timing.background,
-        width: '50%',
-        ease: config.ease.smooth,
-      })
-        .to(
-          '.contact--container',
-          {
-            duration: config.timing.background,
-            opacity: 1,
-            x: '0%',
-            ease: config.ease.smooth,
-          },
-          '-=0.3'
-        )
-        // Pop-in sequences
-        .to('.contactForm--headers h2', {
-          duration: config.timing.base,
+    if (isMobile) {
+      return createMobileAnimation(tl);
+    }
+    return createDesktopAnimation(tl);
+  };
+
+  const createDesktopAnimation = (tl) => {
+    // Entry animation
+    tl.addLabel('start')
+      .to(
+        elements.background,
+        {
+          duration: config.timing.background,
+          width: '50%',
+          ease: config.ease.background,
+        },
+        'start'
+      )
+      .to(
+        elements.container,
+        {
+          duration: config.timing.container,
+          opacity: 1,
+          x: '0%',
+          ease: config.ease.container,
+        },
+        'start+=0.1'
+      )
+
+      // Content animation
+      .addLabel('content', '-=0.1')
+      .to(
+        '.contactForm--headers h2',
+        {
+          duration: config.timing.content,
           opacity: 1,
           y: 0,
           scale: 1,
           ease: config.ease.bounce,
-        })
-        .to(
-          '.contactForm--headers h3',
-          {
-            duration: config.timing.base,
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: config.ease.bounce,
-          },
-          '-=0.15'
-        )
-        .to(
-          '.form-field',
-          {
-            duration: config.timing.base,
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            stagger: config.timing.stagger,
-            ease: config.ease.bounce,
-          },
-          '-=0.1'
-        )
-        .to(
-          '.button',
-          {
-            duration: config.timing.base,
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: config.ease.bounce,
-          },
-          '-=0.1'
-        )
-        .to(
-          '.separator',
-          {
-            duration: config.timing.base,
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: config.ease.bounce,
-          },
-          '-=0.1'
-        )
-        .to(
-          '.cta-button',
-          {
-            duration: config.timing.base,
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            ease: config.ease.bounce,
-          },
-          '-=0.1'
-        );
-    } else {
-      // Mobile sequence
-      tl.to('.contact--container', {
-        duration: config.timing.base,
-        opacity: 1,
-        ease: config.ease.smooth,
-      }).to(
-        [
-          '.contactForm--headers h2',
-          '.contactForm--headers h3',
-          '.form-field',
-          '.button',
-          '.separator',
-          '.cta-button',
-        ],
+        },
+        'content'
+      )
+      .to(
+        '.contactForm--headers h3',
         {
-          duration: config.timing.base,
+          duration: config.timing.content,
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          ease: config.ease.bounce,
+        },
+        'content+=0.1'
+      )
+      .to(
+        '.form-field',
+        {
+          duration: config.timing.content,
           opacity: 1,
           y: 0,
           scale: 1,
           stagger: config.timing.stagger,
           ease: config.ease.bounce,
-        }
+        },
+        'content+=0.2'
+      )
+      .to(
+        ['.button', '.separator', '.cta-button'],
+        {
+          duration: config.timing.content,
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: config.timing.stagger,
+          ease: config.ease.bounce,
+        },
+        '>-0.1'
       );
-    }
+
+    return tl;
+  };
+
+  const createMobileAnimation = (tl) => {
+    tl.to(elements.container, {
+      duration: config.timing.content,
+      opacity: 1,
+      ease: config.ease.container,
+    }).to(elements.contentElements, {
+      duration: config.timing.content,
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      stagger: config.timing.stagger,
+      ease: config.ease.bounce,
+    });
 
     return tl;
   };
 
   // ===============================
-  // Interactive Animations
+  // Form Field Interactions
   // ===============================
-
-  const setupInteractions = () => {
-    // Form Field Focus
-    $('.form-field input, .form-field textarea').each(function () {
+  const setupFieldInteractions = () => {
+    elements.formFields.each(function () {
       const field = $(this);
       const wrapper = field.closest('.form-field');
       const focusTl = gsap.timeline({ paused: true });
@@ -179,7 +184,7 @@ $(document).ready(function () {
       focusTl.to(wrapper, {
         duration: 0.2,
         scale: 1.02,
-        ease: config.ease.smooth,
+        ease: config.ease.content,
       });
 
       field
@@ -194,14 +199,14 @@ $(document).ready(function () {
   const setupFormValidation = () => {
     $.validator.addMethod(
       'pattern',
-      function (value, element, param) {
-        if (this.optional(element)) return true;
-        return new RegExp(param).test(value);
+      (value, element, param) => {
+        if ($(element).prop('required') && !value) return false;
+        return !value || new RegExp(param).test(value);
       },
       'Please check your input.'
     );
 
-    return $('#form').validate({
+    return elements.form.validate({
       rules: {
         name: {
           required: true,
@@ -232,14 +237,14 @@ $(document).ready(function () {
           pattern: 'Please enter a valid UK phone number',
         },
       },
-      errorPlacement: function (error, element) {
+      errorPlacement: (error, element) => {
         error.addClass('error');
         error.appendTo(element.closest('.form-field'));
       },
-      highlight: function (element) {
+      highlight: (element) => {
         $(element).closest('.form-field').addClass('has-error');
       },
-      unhighlight: function (element) {
+      unhighlight: (element) => {
         $(element).closest('.form-field').removeClass('has-error');
       },
     });
@@ -248,14 +253,16 @@ $(document).ready(function () {
   // ===============================
   // Submit Button Animation
   // ===============================
-  const animateSubmitButton = (button, callback) => {
-    if (!button.hasClass('active')) {
+  const animateSubmitButton = (button) => {
+    return new Promise((resolve) => {
+      if (button.hasClass('active')) return resolve();
+
       button.addClass('active');
 
       const planeTl = gsap.timeline({
-        onComplete: function () {
+        onComplete: () => {
           button.removeClass('active');
-          if (typeof callback === 'function') callback();
+          resolve();
         },
       });
 
@@ -346,7 +353,7 @@ $(document).ready(function () {
           '--success-opacity': 1,
           '--success-scale': 1,
         });
-    }
+    });
   };
 
   // ===============================
@@ -356,23 +363,21 @@ $(document).ready(function () {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch(
-        'https://hydro-cleansing.com/api/capture-leads',
-        {
-          method: 'POST',
-          body: formData,
-          headers: {
-            Accept: 'application/json',
-          },
-        }
-      );
+      const response = await fetch(config.api.endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
 
-      if (!response.ok)
+      if (!response.ok) {
         throw new Error(`Submission failed with status: ${response.status}`);
+      }
 
-      Swal.fire({
+      await Swal.fire({
         title: 'Thank you!',
-        html: `If you need us urgently please call us on <br><b><a href='tel:08007408888' style='color: #e55f36; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
+        html: `If you need us urgently please call us on <br><b><a href='tel:08007408888' style='color: ${config.colors.primary}; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
         icon: 'success',
       });
 
@@ -382,10 +387,10 @@ $(document).ready(function () {
     } catch (error) {
       console.error('Submission error:', error);
 
-      Swal.fire({
+      await Swal.fire({
         icon: 'error',
         title: 'Something went wrong!',
-        html: `Try again or contact us directly on <br><b><a href='tel:08007408888' style='color: #e55f36; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
+        html: `Try again or contact us directly on <br><b><a href='tel:08007408888' style='color: ${config.colors.primary}; text-decoration: none; font-size: 20px'>0800 740 8888</a></b>`,
       });
     }
   };
@@ -393,18 +398,21 @@ $(document).ready(function () {
   // ===============================
   // Initialize
   // ===============================
-  setupInitialStates();
-  const validator = setupFormValidation();
-  setupInteractions();
-  createAnimationTimeline();
+  const init = () => {
+    setupInitialStates();
+    const validator = setupFormValidation();
+    setupFieldInteractions();
+    createMainAnimation();
 
-  // Form Submit Handler
-  $('#form').on('submit', function (e) {
-    e.preventDefault();
-    if ($(this).valid()) {
-      animateSubmitButton($('#submitButton'), () => {
-        handleFormSubmit(this);
-      });
-    }
-  });
+    // Form Submit Handler
+    elements.form.on('submit', async function (e) {
+      e.preventDefault();
+      if (!$(this).valid()) return;
+
+      await animateSubmitButton(elements.submitButton);
+      await handleFormSubmit(this);
+    });
+  };
+
+  init();
 });
