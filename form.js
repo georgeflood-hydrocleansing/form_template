@@ -49,6 +49,11 @@ $(document).ready(function () {
   };
 
   // ===============================
+  // Validator Variable
+  // ===============================
+  let validator; // Declare validator in the outer scope
+
+  // ===============================
   // Animation Setup
   // ===============================
   const setupInitialStates = () => {
@@ -383,7 +388,7 @@ $(document).ready(function () {
       });
 
       form.reset();
-      validator.resetForm();
+      validator.resetForm(); // Now validator is accessible here
       $('.form-field').removeClass('has-error');
     } catch (error) {
       console.error('Submission error:', error);
@@ -401,7 +406,7 @@ $(document).ready(function () {
   // ===============================
   const init = () => {
     setupInitialStates();
-    const validator = setupFormValidation();
+    validator = setupFormValidation(); // Assign to the outer scoped variable
     setupFieldInteractions();
     createMainAnimation();
 
