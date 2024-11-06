@@ -379,6 +379,7 @@ select:-webkit-autofill {
 .phone-text {
   color: var(--primary-dark);
   font-size: 1.1em;
+  text-decoration: underline;
 }
 
 @media (max-width: 820px) {
