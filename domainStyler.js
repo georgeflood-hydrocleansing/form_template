@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch('config.json')
     .then((response) => response.json())
     .then((data) => {
+      console.log(Object.keys(data).length);
       const hostName = window.location.hostname;
       const container = document.querySelector('.background--container');
       let backgroundImageUrl;

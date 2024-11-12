@@ -384,6 +384,12 @@ select:-webkit-autofill {
   text-decoration: underline;
 }
 
+.g-recaptcha {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 820px) {
   html,
   body {

@@ -88,6 +88,11 @@
       type="image/x-icon"
       href="./images/Favicon.png"
     />
+    <script
+      src="https://www.google.com/recaptcha/enterprise.js"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -101,6 +106,7 @@
           <form
             id="form"
             class="form"
+            method="POST"
           >
             <div class="form-field">
               <input
@@ -163,6 +169,11 @@
               </a>
             </div>
           </form>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LdDXHwqAAAAAHCqtZbSoid4S5bE7gTzvfVjr8at"
+            data-callback="onRecaptchaSuccess"
+          ></div>
         </div>
       </div>
     </div>
