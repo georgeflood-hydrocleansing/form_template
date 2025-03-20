@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
 
-      document.title = `${companyName} | Contact Us`;
-
       function determineCompanyType(hostname, backgroundImage) {
         if (backgroundImage.includes('FloodResponse')) {
           return 'EmergencyService';
@@ -66,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (data[hostName]) {
         const domainConfig = data[hostName];
         backgroundImageUrl = domainConfig.backgroundImage;
+        document.title = `${domainConfig.title} Specialists | 24x7 support`;
         document.querySelector('.contactForm--headers h3').textContent =
           domainConfig.text;
 

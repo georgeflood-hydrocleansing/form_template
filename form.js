@@ -27,6 +27,16 @@ $(document).ready(function () {
     },
   };
 
+  // ===============================
+  // reCAPTCHA Variables
+  // ===============================
+  let recaptchaVerified = false;
+
+  // reCAPTCHA success callback
+  window.onRecaptchaSuccess = function () {
+    recaptchaVerified = true;
+  };
+
   const isMobile = window.innerWidth <= config.breakpoints.mobile;
 
   // ===============================
@@ -366,6 +376,16 @@ $(document).ready(function () {
   // Form Submission
   // ===============================
   const handleFormSubmit = async (form) => {
+    // Check if reCAPTCHA is verified
+    if (!recaptchaVerified) {
+      await Swal.fire({
+        icon: 'error',
+        title: 'reCAPTCHA Required',
+        text: 'Please complete the reCAPTCHA verification before submitting the form.',
+      });
+      return;
+    }
+
     const formData = new FormData(form);
 
     try {
@@ -390,6 +410,10 @@ $(document).ready(function () {
       form.reset();
       validator.resetForm(); // Now validator is accessible here
       $('.form-field').removeClass('has-error');
+
+      // Reset reCAPTCHA
+      recaptchaVerified = false;
+      grecaptcha.reset();
     } catch (error) {
       console.error('Submission error:', error);
 

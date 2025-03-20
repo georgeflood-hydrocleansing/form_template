@@ -22,7 +22,6 @@
       name="geo.placename"
       content="London"
     />
-
     <meta
       property="og:type"
       content="website"
@@ -88,11 +87,8 @@
       type="image/x-icon"
       href="./images/Favicon.png"
     />
-    <script
-      src="https://www.google.com/recaptcha/enterprise.js"
-      async
-      defer
-    ></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
   </head>
   <body>
     <div class="container">
@@ -152,31 +148,41 @@
                 id="submitButton"
                 class="button"
               >
-                <span class="default">Send</span>
+                <span
+                  class="default"
+                  type="submit"
+                  >Send</span
+                >
                 <span class="success">Sent!</span>
                 <div class="left"></div>
                 <div class="right"></div>
               </button>
+
+              <!-- The Turnstile widget will be rendered here -->
+
+              <div
+                class="cf-turnstile"
+                data-sitekey="0x4AAAAAABBaTcHKEbJzzUIW"
+                data-callback="javascriptCallback"
+              ></div>
+
               <div class="separator">or</div>
               <a
                 href="tel:08007408888"
                 class="cta-button"
               >
-                <span class="phone-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </span>
+                <span class="phone-icon"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
                 Emergency: <span class="phone-text">0800 740 8888</span>
               </a>
             </div>
           </form>
-          <div
-            class="g-recaptcha"
-            data-sitekey="6LdDXHwqAAAAAHCqtZbSoid4S5bE7gTzvfVjr8at"
-            data-callback="onRecaptchaSuccess"
-          ></div>
         </div>
       </div>
     </div>
+
+    <!-- External scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
